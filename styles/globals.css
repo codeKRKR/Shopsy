@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  /* background-color: #88def6af; */
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background-color: #FBFBFF;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.product-card h3 {
+  margin-top: 0;
+}
+
+label {
+  margin-right: 10px;
+}
+
+input[type="text"] {
+  padding: 5px;
+  width: 200px;
+}
+
+button {
+  padding: 5px 10px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.navbar{
+  display: flex;
+  background-color: #0B4F6C;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.companyName{
+  color: #d60f0c;
+}
+
+.categorySelector{
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.Searchbar{
+  width: 20rem;
+}
+
+.input{
+  height: 2rem;
+  width: 10rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+/* .Searchbar > .input{
+  width: 73%;
+} */
+
+@media (max-width:610px){
+  .companyName{
+    display: none;
+  }
+  .categorySelector{
+    display: none;
+  }
+  .navbar{
+    justify-content: center;
+  }
+}
